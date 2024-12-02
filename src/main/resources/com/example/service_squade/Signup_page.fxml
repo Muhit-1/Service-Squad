@@ -1,91 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.service_squade.SignupController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.service_squade.SignupController">
    <left>
-      <AnchorPane prefHeight="507.0" prefWidth="328.0" style="-fx-background-color: #243642;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="600.0" prefWidth="410.0" style="-fx-background-color: #243642;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" layoutX="4.0" layoutY="83.0" prefHeight="63.0" prefWidth="320.0" text="Welcome" textFill="#e2f1e7">
+            <Label alignment="CENTER" layoutX="4.0" layoutY="83.0" prefHeight="64.0" prefWidth="400.0" text="Welcome" textFill="#e2f1e7">
                <font>
                   <Font name="System Bold" size="43.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="4.0" layoutY="124.0" prefHeight="63.0" prefWidth="320.0" text="To" textFill="#e2f1e7">
+            <Label alignment="CENTER" layoutX="4.0" layoutY="147.0" prefHeight="63.0" prefWidth="403.0" text="To" textFill="#e2f1e7">
                <font>
                   <Font name="System Bold" size="32.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="4.0" layoutY="171.0" prefHeight="63.0" prefWidth="320.0" text="Service Squad" textFill="#1cee62">
+            <Label alignment="CENTER" layoutX="2.0" layoutY="197.0" prefHeight="63.0" prefWidth="406.0" text="Service Squad" textFill="#1cee62">
                <font>
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="2.0" layoutY="367.0" prefHeight="51.0" prefWidth="322.0" text="Same-day service platform" textFill="#e4dc47">
+            <Label alignment="CENTER" layoutX="36.0" layoutY="468.0" prefHeight="51.0" prefWidth="322.0" text="Same-day service platform" textFill="#e4dc47">
                <font>
                   <Font name="System Italic" size="13.0" />
                </font>
             </Label>
+            <ImageView fitHeight="173.0" fitWidth="254.0" layoutX="124.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@picture/icon2.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </left>
-   <right>
-      <AnchorPane prefHeight="500.0" prefWidth="472.0" BorderPane.alignment="CENTER">
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="610.0" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" layoutX="181.0" layoutY="21.0" prefHeight="45.0" prefWidth="110.0" text="Sign Up" textFill="#243642">
                <font>
                   <Font name="Arial Bold" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="94.0" prefHeight="29.0" prefWidth="77.0" text="Name">
+            <Label layoutX="62.0" layoutY="109.0" prefHeight="29.0" prefWidth="77.0" text="Name :">
                <font>
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="147.0" prefHeight="29.0" prefWidth="77.0" text="Email">
+            <Label layoutX="62.0" layoutY="164.0" prefHeight="29.0" prefWidth="77.0" text="Email :">
                <font>
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="262.0" prefHeight="29.0" prefWidth="77.0" text="Phone">
+            <Label layoutX="62.0" layoutY="270.0" prefHeight="29.0" prefWidth="77.0" text="Phone :">
                <font>
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="310.0" prefHeight="29.0" prefWidth="77.0" text="Address">
+            <Label layoutX="62.0" layoutY="321.0" prefHeight="29.0" prefWidth="77.0" text="Address :">
                <font>
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="201.0" prefHeight="29.0" prefWidth="95.0" text="Password">
+            <Label layoutX="63.0" layoutY="218.0" prefHeight="29.0" prefWidth="95.0" text="Password :">
                <font>
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="69.0" layoutY="366.0" prefHeight="29.0" prefWidth="110.0" text="Register as ">
+            <Label layoutX="55.0" layoutY="435.0" prefHeight="29.0" prefWidth="110.0" text="Register as :">
                <font>
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="nameField" layoutX="135.0" layoutY="92.0" prefHeight="33.0" prefWidth="205.0" promptText="Enter your name" />
-            <TextField fx:id="emailField" layoutX="135.0" layoutY="145.0" prefHeight="33.0" prefWidth="206.0" promptText="Enter your Email" />
-             <PasswordField fx:id="passwordField" layoutX="160.0" layoutY="199.0" prefHeight="33.0" prefWidth="206.0" promptText="Enter a password" />
-             <TextField fx:id="phoneField" layoutX="135.0" layoutY="250.0" prefHeight="33.0" prefWidth="206.0" promptText="Phone number" />
-            <TextField fx:id="addressField" layoutX="146.0" layoutY="308.0" prefHeight="33.0" prefWidth="206.0" promptText="Where do you live ?" />
-            <ChoiceBox fx:id="roleChoiceBox" layoutX="182.0" layoutY="368.0" prefHeight="24.0" prefWidth="163.0" style="-fx-background-color: #387478;" />
-            <Button alignment="CENTER" layoutX="194.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #19e45d;" text="Button">
+            <TextField fx:id="nameField" layoutX="168.0" layoutY="107.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter your name" />
+            <TextField fx:id="emailField" layoutX="168.0" layoutY="164.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter your Email" />
+             <PasswordField fx:id="passwordField" layoutX="168.0" layoutY="216.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter a password" />
+             <TextField fx:id="phoneField" layoutX="168.0" layoutY="268.0" prefHeight="33.0" prefWidth="219.0" promptText="Phone number" />
+            <TextField fx:id="addressField" layoutX="168.0" layoutY="319.0" prefHeight="33.0" prefWidth="219.0" promptText="Where do you live ?" />
+            <ChoiceBox fx:id="roleChoiceBox" layoutX="168.0" layoutY="437.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="185.0" style="-fx-background-position: ; -fx-background-color: #387478;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></ChoiceBox>
+            <Button alignment="CENTER" layoutX="273.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #1F509A;" text="Sign up" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Button>
+            <Button alignment="CENTER" layoutX="81.0" layoutY="501.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: #9EDF9C;" text="Back to login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="62.0" layoutY="378.0" prefHeight="29.0" prefWidth="77.0" text="City :">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="cityChoiceBox" layoutX="168.0" layoutY="380.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="185.0" style="-fx-background-position: ; -fx-background-color: #387478;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ChoiceBox>
          </children>
       </AnchorPane>
-   </right>
+   </center>
 </BorderPane>

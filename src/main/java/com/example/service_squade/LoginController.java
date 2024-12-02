@@ -21,16 +21,21 @@ public class LoginController {
     private TextField usernameField;
 
     @FXML
-    private PasswordField passwordField; // Changed to PasswordField
+    private PasswordField passwordField;
 
     @FXML
     private void SignUp() {
         try {
+            // Load the Signup_page.fxml
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Signup_page.fxml"));
-            Stage stage = new Stage();
-            stage.setScene(new Scene(fxmlLoader.load()));
-            stage.setTitle("Register - Service Squade");
-            stage.show();
+            Scene scene = new Scene(fxmlLoader.load());
+
+            // Get the current stage
+            Stage currentStage = (Stage) usernameField.getScene().getWindow();
+
+            // Set the signup scene
+            currentStage.setScene(scene);
+            currentStage.setTitle("Register - Service Squad");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -41,21 +46,38 @@ public class LoginController {
         String email = usernameField.getText();
         String password = passwordField.getText();
 
-        try (Connection conn = DatabaseConnection.connect()) {
+        String dbUrl = "jdbc:sqlite:src/main/java/Database/db_service_squad.db";
+
+        if (email.isEmpty() || password.isEmpty()) {
+            showAlert(Alert.AlertType.WARNING, "Login Failed", "Please enter both email and password.");
+            return;
+        }
+
+        try (Connection conn = DatabaseConnection.connect(dbUrl)) {
             String sql = "SELECT * FROM User WHERE email = ? AND password = ?";
             try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
                 pstmt.setString(1, email);
                 pstmt.setString(2, password);
                 ResultSet rs = pstmt.executeQuery();
+
                 if (rs.next()) {
+                    String userRole = rs.getString("role");
+                    String userName = rs.getString("name");
+
                     // Login successful
-                    showAlert(Alert.AlertType.INFORMATION, "Login", "Login successful!");
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
+                    Scene homeScene = new Scene(fxmlLoader.load());
+
+                    // Get the current stage
+                    Stage currentStage = (Stage) usernameField.getScene().getWindow();
+                    currentStage.setScene(homeScene);
+                    currentStage.setTitle("Home - Service Squad");
                 } else {
                     // Login failed
                     showAlert(Alert.AlertType.ERROR, "Login Failed", "Invalid email or password.");
                 }
             }
-        } catch (SQLException e) {
+        } catch (SQLException | IOException e) {
             e.printStackTrace();
             showAlert(Alert.AlertType.ERROR, "Error", "Error during login. Please try again.");
         }

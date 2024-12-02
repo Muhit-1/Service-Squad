@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+.primary-color{
+-fx-background-color: #8B5C2A;
+
+}
+
+.secondary-color{
+-fx-background-color: #3E7E56;
+}
+
+
+.left-side-border{
+-fx-border-color: #fff;
+-fx-border-width: 0 8 8 5;
+}
+
+
+.selected: hover{
+ -fx-background-color: #A8CD89
+}
