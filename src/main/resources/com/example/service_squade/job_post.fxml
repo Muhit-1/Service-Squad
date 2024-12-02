@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="584.0" prefWidth="887.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="8.0">
+         <children>
+            <Label layoutX="317.0" layoutY="55.0" prefHeight="39.0" prefWidth="223.0" text="Post a job service" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="347.0" AnchorPane.topAnchor="55.0">
+               <font>
+                  <Font name="Calisto MT Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="150.0" prefHeight="27.0" prefWidth="116.0" text="Category : ">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="192.0" layoutY="152.0" prefWidth="150.0" promptText="Choose a category" />
+            <Label layoutX="80.0" layoutY="211.0" prefHeight="27.0" prefWidth="170.0" text="Job Description :">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="80.0" layoutY="246.0" prefHeight="100.0" prefWidth="691.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="85.0" layoutY="374.0" prefHeight="27.0" prefWidth="80.0" text="Status :">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="165.0" layoutY="375.0" prefWidth="150.0" promptText="Set a status" />
+            <Button layoutX="223.0" layoutY="489.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" text="Add">
+               <font>
+                  <Font name="Centaur" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="529.0" layoutY="489.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" text="Delete">
+               <font>
+                  <Font name="Centaur" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="373.0" layoutY="489.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" text="Update">
+               <font>
+                  <Font name="Centaur" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
