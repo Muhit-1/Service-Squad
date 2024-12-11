@@ -26,14 +26,11 @@ public class LoginController {
     @FXML
     private void SignUp() {
         try {
-            // Load the Signup_page.fxml
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Signup_page.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
 
-            // Get the current stage
             Stage currentStage = (Stage) usernameField.getScene().getWindow();
 
-            // Set the signup scene
             currentStage.setScene(scene);
             currentStage.setTitle("Register - Service Squad");
         } catch (IOException e) {
@@ -61,19 +58,21 @@ public class LoginController {
                 ResultSet rs = pstmt.executeQuery();
 
                 if (rs.next()) {
+                    int userId = rs.getInt("user_id");
                     String userRole = rs.getString("role");
                     String userName = rs.getString("name");
 
-                    // Login successful
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home.fxml"));
                     Scene homeScene = new Scene(fxmlLoader.load());
+                    HomeController homeController = fxmlLoader.getController();
+                    homeController.setLoggedInUserId(userId);
 
-                    // Get the current stage
+
                     Stage currentStage = (Stage) usernameField.getScene().getWindow();
                     currentStage.setScene(homeScene);
                     currentStage.setTitle("Home - Service Squad");
                 } else {
-                    // Login failed
+
                     showAlert(Alert.AlertType.ERROR, "Login Failed", "Invalid email or password.");
                 }
             }

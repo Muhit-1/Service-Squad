@@ -31,7 +31,7 @@
                   <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="36.0" layoutY="468.0" prefHeight="51.0" prefWidth="322.0" text="Same-day service platform" textFill="#e4dc47">
+            <Label alignment="CENTER" layoutX="36.0" layoutY="468.0" prefHeight="51.0" prefWidth="341.0" text="Same-day service platform" textFill="#e4dc47">
                <font>
                   <Font name="System Italic" size="13.0" />
                </font>
@@ -82,21 +82,21 @@
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="nameField" layoutX="168.0" layoutY="107.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter your name" />
-            <TextField fx:id="emailField" layoutX="168.0" layoutY="164.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter your Email" />
-             <PasswordField fx:id="passwordField" layoutX="168.0" layoutY="216.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter a password" />
-             <TextField fx:id="phoneField" layoutX="168.0" layoutY="268.0" prefHeight="33.0" prefWidth="219.0" promptText="Phone number" />
-            <TextField fx:id="addressField" layoutX="168.0" layoutY="319.0" prefHeight="33.0" prefWidth="219.0" promptText="Where do you live ?" />
-            <ChoiceBox fx:id="roleChoiceBox" layoutX="168.0" layoutY="437.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="185.0" style="-fx-background-position: ; -fx-background-color: #387478;">
+            <TextField fx:id="nameField" layoutX="167.0" layoutY="107.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter your name" style="-fx-background-radius: 10px;" />
+            <TextField fx:id="emailField" layoutX="168.0" layoutY="164.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter your Email" style="-fx-background-radius: 10px;" />
+             <PasswordField fx:id="passwordField" layoutX="168.0" layoutY="216.0" prefHeight="33.0" prefWidth="219.0" promptText="Enter a password" style="-fx-background-radius: 10px;" />
+             <TextField fx:id="phoneField" layoutX="168.0" layoutY="268.0" prefHeight="33.0" prefWidth="219.0" promptText="Phone number" style="-fx-background-radius: 10px;" />
+            <TextField fx:id="addressField" layoutX="168.0" layoutY="319.0" prefHeight="33.0" prefWidth="219.0" promptText="Where do you live ?" style="-fx-background-radius: 10px;" />
+            <ChoiceBox fx:id="roleChoiceBox" layoutX="168.0" layoutY="437.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="185.0" style="-fx-background-radius: 15px;">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor></ChoiceBox>
-            <Button alignment="CENTER" layoutX="273.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="35.0" prefWidth="132.0" style="-fx-background-color: #1F509A;" text="Sign up" textFill="WHITE">
+            <Button alignment="CENTER" layoutX="273.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="35.0" prefWidth="132.0" style="-fx-background-radius: 10px;" styleClass="Button-color_2" stylesheets="@css/style.css" text="Sign up" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" layoutX="81.0" layoutY="501.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: #9EDF9C;" text="Back to login" textFill="WHITE">
+            <Button alignment="CENTER" layoutX="81.0" layoutY="501.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="35.0" prefWidth="134.0" style="-fx-background-radius: 10px;" styleClass="Button-color_1" stylesheets="@css/style.css" text="Back to login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -106,7 +106,7 @@
                   <Font name="Calibri" size="20.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="cityChoiceBox" layoutX="168.0" layoutY="380.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="185.0" style="-fx-background-position: ; -fx-background-color: #387478;">
+            <ChoiceBox fx:id="cityChoiceBox" layoutX="168.0" layoutY="380.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="185.0" style="-fx-background-radius: 10px;">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>

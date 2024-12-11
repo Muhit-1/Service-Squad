@@ -7,6 +7,7 @@ module com.example.service_squade {
     requires net.synedra.validatorfx;
     requires javafx.graphics;
     requires java.sql;
+    requires java.desktop;
 
     opens com.example.service_squade to javafx.fxml;
     exports com.example.service_squade;

@@ -1,10 +1,10 @@
 .primary-color{
--fx-background-color: #8B5C2A;
+-fx-background-color: #243642;
 
 }
 
 .secondary-color{
--fx-background-color: #3E7E56;
+-fx-background-color: #F4F4F4;
 }
 
 
@@ -15,5 +15,23 @@
 
 
 .selected: hover{
- -fx-background-color: #A8CD89
+ -fx-background-color: #1F509A
 }
+
+.selected_2: hover{
+ -fx-background-color: #9EDF9C
+}
+
+
+.Button-color_1{
+-fx-background-color: #9EDF9C;
+
+}
+
+.Button-color_2{
+-fx-background-color: #1F509A;
+
+}
+
+.setStyle{
+-fx-box-border: transparent};

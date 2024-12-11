@@ -152,7 +152,6 @@ public class DatabaseConnection {
                 applicationTable, paymentTable, messageTable, reviewTable, historyTable
         };
 
-        // Initialize all databases
         for (String dbUrl : dbUrls) {
             try (Connection conn = connect(dbUrl);
                  Statement stmt = conn.createStatement()) {
