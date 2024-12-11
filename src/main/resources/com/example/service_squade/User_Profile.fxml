@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.service_squade.User_Profile_Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="271.0" layoutY="26.0" prefHeight="38.0" prefWidth="159.0" text="User Profile" textFill="#0f6b1c" AnchorPane.topAnchor="26.0">
+         <font>
+            <Font name="Calibri Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="119.0" prefHeight="29.0" prefWidth="77.0" text="Name :">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="185.0" prefHeight="29.0" prefWidth="77.0" text="Email :">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="388.0" prefHeight="29.0" prefWidth="77.0" text="Phone :">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="456.0" prefHeight="29.0" prefWidth="102.0" text="Address :">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="255.0" prefHeight="29.0" prefWidth="166.0" text="Password Change :">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="498.0" layoutY="519.0" mnemonicParsing="false" onAction="#saveUserData" prefHeight="38.0" prefWidth="134.0" style="-fx-background-radius: 10px;" stylesheets="@css/style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Button-color_1" />
+            <String fx:value="selected" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="nameField" layoutX="195.0" layoutY="119.0" prefHeight="29.0" prefWidth="265.0" style="-fx-background-color: #BCCCDC;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailField" layoutX="195.0" layoutY="183.0" prefHeight="29.0" prefWidth="265.0" style="-fx-background-color: #BCCCDC;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="oldPasswordField" layoutX="256.0" layoutY="253.0" prefHeight="29.0" prefWidth="265.0" promptText="Old password" style="-fx-background-color: #BCCCDC;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneField" layoutX="195.0" layoutY="387.0" prefHeight="29.0" prefWidth="265.0" style="-fx-background-color: #BCCCDC;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressField" layoutX="195.0" layoutY="455.0" prefHeight="29.0" prefWidth="265.0" style="-fx-background-color: #BCCCDC;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="newPasswordField" layoutX="256.0" layoutY="316.0" prefHeight="29.0" prefWidth="265.0" promptText="New Password" style="-fx-background-color: #BCCCDC;">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

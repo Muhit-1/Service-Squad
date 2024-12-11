@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.service_squade.About_page_Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="306.0" layoutY="22.0" prefHeight="38.0" prefWidth="105.0" text="About" textFill="#006aab" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font name="Calibri Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="108.0" layoutY="300.0" prefHeight="32.0" prefWidth="126.0" styleClass="secondary-color" stylesheets="@css/style.css" text="Version from :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="117.0" layoutY="352.0" prefHeight="32.0" prefWidth="126.0" styleClass="secondary-color" stylesheets="@css/style.css" text="Developer :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="254.0" layoutY="352.0" prefHeight="54.0" prefWidth="290.0" styleClass="secondary-color" stylesheets="@css/style.css" text="Muhit Rahman , Afrina Mannan Ummay Farhana,Tomal Gomes" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="436.0" prefHeight="32.0" prefWidth="142.0" styleClass="secondary-color" stylesheets="@css/style.css" text="Requirments :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Text layoutX="71.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Service Squad! This platform connects users with trusted professionals for a variety of services like babysitting, cooking, and home maintenance. It simplifies the process of finding and booking reliable services, all in one place." textAlignment="CENTER" wrappingWidth="574.13671875">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Text>
+      <Hyperlink layoutX="254.0" layoutY="299.0" onAction="#githubLink" prefHeight="34.0" prefWidth="203.0" text="Service Squad version">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Hyperlink>
+      <Text layoutX="257.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Java 11+- JavaFX SDK- SQLite Database- Maven (for dependency management)" textAlignment="CENTER" wrappingWidth="186.13671875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
